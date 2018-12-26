@@ -25,9 +25,9 @@ Participants will be provided with a corpus of several thousands of examples com
 
 ### Task Description
 
-* Binary presence-absence classification. For every sentence decide  if there is a gapping construction in it
-* Gap resolution. Predict the position of the elided predicate and the correspondent predicate in the antecedent clause
-* Full annotation. In the clause with the gap predict the linear position of the elided predicate and annotate its remnants. In the antecedent clause find the constituencies that correspond the remnants and the predicate that corresponds the gap
+* **Binary presence-absence classification.** For every sentence decide  if there is a gapping construction in it
+* **Gap resolution.** Predict the position of the elided predicate and the correspondent predicate in the antecedent clause
+* **Full annotation.** In the clause with the gap predict the linear position of the elided predicate and annotate its remnants. In the antecedent clause find the constituencies that correspond the remnants and the predicate that corresponds the gap
 
 
 ### Data formats and metrics
@@ -43,12 +43,12 @@ Input
 
 Output
 1
-cV  166:170
-cR1  171:190
-cR2  191:206
-V 222:222 254:254 
-R1  208:219 240:251
-R2  222:237 254:269
+-cV  166:170
+-cR1  171:190
+-cR2  191:206
+-V 222:222 254:254 
+-R1  208:219 240:251
+-R2  222:237 254:269
 
 Such output corresponds to the following markup:
 
@@ -65,12 +65,12 @@ Gapping element annotations would be measured by symbol-wise f-measure. E. g. if
 ### AGRR tracks
 
 The following tracks are offered to participants:
-1. Closed track – open source track. 
+**1. Closed track** – open source track. 
 convenient for research groups and student teams
 Participants are allowed to train their models only on open-access data (open source dictionaries, word embeddings, open parsing systems, etc)
 To verify the results, participants should place their code and the model on github, so that it would be publicly available - both for organizers and other teams.
 
-2. Open track - no restriction on data and systems used.
+**2. Open track** - no restriction on data and systems used.
 recommended for industrial participants, representing their products
 Track participants are allowed to bring any data for learning beyond the data provided and use their own commercial programs. Github sharing is not required. 
 
