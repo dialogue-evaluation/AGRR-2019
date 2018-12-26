@@ -2,9 +2,9 @@
 ## AGRR: Automatic Gapping Resolution for Russian
 
 Gapping is the most common type of ellipsis, concerning such examples as 
-“Ей он рассказывает одно, а нам — совершенно другое”, 
-“Кто любит арбуз, а кто - свиной хрящик”,
-“Дайте мне две пятерки, а я вам десятку”
+- “Ей он рассказывает одно, а нам -- совершенно другое”
+- “Кто любит арбуз, а кто -- свиной хрящик” 
+- “Дайте мне две пятерки, а я вам десятку”
 
 
 ### Motivation
@@ -26,9 +26,12 @@ Participants will be provided with a corpus of several thousands of examples com
 
 ### Task Description
 
-* **Binary presence-absence classification.** For every sentence decide  if there is a gapping construction in it
-* **Gap resolution.** Predict the position of the elided predicate and the correspondent predicate in the antecedent clause
-* **Full annotation.** In the clause with the gap predict the linear position of the elided predicate and annotate its remnants. In the antecedent clause find the constituencies that correspond the remnants and the predicate that corresponds the gap
+**Binary presence-absence classification.** 
+        For every sentence decide  if there is a gapping construction in it
+**Gap resolution.** 
+        Predict the position of the elided predicate and the correspondent predicate in the antecedent clause
+**Full annotation.** 
+        In the clause with the gap predict the linear position of the elided predicate and annotate its remnants. In the antecedent     clause find the constituencies that correspond the remnants and the predicate that corresponds the gap
 
 
 ### Data formats and metrics
@@ -42,7 +45,6 @@ Example:
 Input
 Аналогичным образом, среднегодовой прирост ВВП на душу населения, который в странах, расположенных к югу от Сахары, составлял в период с 1965 по 1973 год 3 процента, упал с 1980 до 1986 года на 2,8 процента, в 1987 году - на 4,4 процента и в 1989 году - на 0,5 процента.
 
-`
 Output
 1  
 cV  166:170  
@@ -51,7 +53,7 @@ cR2  191:206
 V 222:222 254:254   
 R1  208:219 240:251  
 R2  222:237 254:269  
-`
+
 
 Such output corresponds to the following markup:
 
