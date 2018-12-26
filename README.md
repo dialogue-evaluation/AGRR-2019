@@ -1,9 +1,9 @@
 # AGGR-2019
 ## AGRR: Automatic Gapping Resolution for Russian
 
-Gapping is the most common type of ellipsis, concerning such examples as 
-_Ей он рассказывает одно, а нам -- совершенно другое_
-_Кто любит арбуз, а кто -- свиной хрящик_
+Gapping is the most common type of ellipsis, concerning such examples as  
+_Ей он рассказывает одно, а нам -- совершенно другое_  
+_Кто любит арбуз, а кто -- свиной хрящик_  
 _Дайте мне две пятерки, а я вам десятку_
 
 
@@ -23,12 +23,12 @@ Participants will be provided with a corpus of several thousands of examples com
 
 ### Task Description
 
-**Binary presence-absence classification.**
-For every sentence decide  if there is a gapping construction in it
-**Gap resolution.**
-Predict the position of the elided predicate and the correspondent predicate in the antecedent clause
-**Full annotation.**
-In the clause with the gap predict the linear position of the elided predicate and annotate its remnants. In the antecedent     clause find the constituencies that correspond the remnants and the predicate that corresponds the gap
+**Binary presence-absence classification.**  
+For every sentence decide  if there is a gapping construction in it  
+**Gap resolution.**  
+Predict the position of the elided predicate and the correspondent predicate in the antecedent clause  
+**Full annotation.**  
+In the clause with the gap predict the linear position of the elided predicate and annotate its remnants. In the antecedent clause find the constituencies that correspond the remnants and the predicate that corresponds the gap
 
 
 ### Data formats and metrics
