@@ -13,10 +13,9 @@ The aim of this task is to challenge non-trivial linguistic phenomenon, gapping,
 This campaign is a pilot event for gapping resolution task for Russian held for the first time.
 
 
-
 ### Examples (data)
 
-Participants will be provided with a corpus of several thousands of examples coming from texts of different genres, such as news, fiction, and science. Each sentence will be annotated as follows: we annotate two remnants R1 and R2, their correlates (correspondents) in the antecedent clause cR1 and cR2, the position of the elided  predicate V and the head of the correspondent predicate cV.
+Participants will be provided with a corpus of several thousands of examples coming from texts of different genres, such as news, fiction, and science. Each sentence will be annotated as follows: two remnants R1 and R2, their correlates in the antecedent clause cR1 and cR2, the position of the elided  predicate V and the head of the correspondent predicate cV.
  
  
 (1) Тогда я  cV[принял cV]  cR1[ее cR1]  cR2[за итальянку cR2], а  R1[его R1]   V[]  cR2[за шведа cR2].
@@ -26,9 +25,9 @@ Participants will be provided with a corpus of several thousands of examples com
 
 ### Task Description
 
-Binary presence-absence classification. For every sentence decide  if there is a gapping construction in it
-Gap resolution. Predict the position of the elided predicate and the correspondent predicate in the antecedent clause
-Full annotation. In the clause with the gap predict the linear position of the elided predicate and annotate its remnants. In the antecedent clause find the constituencies that correspond the remnants and the predicate that corresponds the gap
+* Binary presence-absence classification. For every sentence decide  if there is a gapping construction in it
+* Gap resolution. Predict the position of the elided predicate and the correspondent predicate in the antecedent clause
+* Full annotation. In the clause with the gap predict the linear position of the elided predicate and annotate its remnants. In the antecedent clause find the constituencies that correspond the remnants and the predicate that corresponds the gap
 
 
 ### Data formats and metrics
