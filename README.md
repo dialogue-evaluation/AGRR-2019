@@ -9,7 +9,8 @@ Gapping is the most common type of ellipsis, concerning such examples as
 
 ### Motivation
 
-The aim of this task is to challenge non-trivial linguistic phenomenon, gapping, that occurs in coordinated structures and elides a repeated predicate, typically from the second clause. Besides the adversity of the construction itself, the phenomenon is naturally rare, which results in lack of training data. During the last two years Gapping has received considerable attention  ( S Schuster, M Lamm, CD Manning 2017; K Droganova, D Zeman  2017; K Droganova et al 2018, S Schuster, J Nivre, CD Manning 2018; Nivre et al 2018). Unfortunately, research was mainly held on insufficient data not exceeding several hundreds of sentences so far. 
+The aim of this task is to challenge non-trivial linguistic phenomenon, gapping, that occurs in coordinated structures and elides a repeated predicate, typically from the second clause. Besides the adversity of the construction itself, the phenomenon is naturally rare, which results in lack of training data. During the last two years Gapping has received considerable attention  ( [S Schuster, M Lamm, CD Manning 2017](http://www.aclweb.org/anthology/W17-0416); [K Droganova, D Zeman  2017](http://www.aclweb.org/anthology/W17-0406); [K Droganova et al 2018](http://www.aclweb.org/anthology/W18-6006); [S Schuster, J Nivre, CD Manning 2018](https://arxiv.org/pdf/1804.06922.pdf); [Nivre et al 2018](http://www.aclweb.org/anthology/W18-6012)).
+Unfortunately, research was mainly held on insufficient data not exceeding several hundreds of sentences so far. 
 This campaign is a pilot event for gapping resolution task for Russian held for the first time.
 
 
