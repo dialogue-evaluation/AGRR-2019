@@ -16,9 +16,9 @@ This campaign is a pilot event for gapping resolution task for Russian held for 
 
 ### Examples (data)
 
-Participants will be provided with a corpus of several thousands of examples coming from texts of different genres, such as news, fiction, and science. Each sentence will be annotated as follows: two remnants R1 and R2, their correlates in the antecedent clause cR1 and cR2, the position of the elided  predicate V and the head of the correspondent predicate cV.
-- Тогда я  cV[принял cV]  cR1[ее cR1]  cR2[за итальянку cR2], а  R1[его R1]   V[]  cR2[за шведа cR2].
-- cR1[Иногда cR1] они  cV[развиваются cV]  cR2[слабо cR2],  R1[иногда R1] - V[]   R2[очень сильно R2], и тогда они начинают влиять на ход сюжета, а не наоборот.
+Participants will be provided with a corpus of several thousands of examples coming from texts of different genres, such as news, fiction, and science. Each sentence will be annotated as follows: two remnants **R1** and **R2**, their correlates in the antecedent clause **cR1** and **cR2**, the position of the elided  predicate **V** and the head of the correspondent predicate **cV**.
+- _Тогда я  **cV[** принял **cV]**  cR1[ее cR1]  cR2[за итальянку cR2], а  R1[его R1]   V[]  cR2[за шведа cR2]._
+- _cR1[Иногда cR1] они  cV[развиваются cV]  cR2[слабо cR2],  R1[иногда R1] - V[]   R2[очень сильно R2], и тогда они начинают влиять на ход сюжета, а не наоборот._
  
 
 ### Task Description
