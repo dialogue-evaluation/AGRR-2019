@@ -67,6 +67,7 @@ Gapping element annotations would be measured by symbol-wise f-measure. E. g. if
 ### AGRR tracks
 
 The following tracks are offered to participants:
+
 **1. Closed track** – open source track. 
 convenient for research groups and student teams
 Participants are allowed to train their models only on open-access data (open source dictionaries, word embeddings, open parsing systems, etc)
