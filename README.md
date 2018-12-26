@@ -2,8 +2,8 @@
 ## AGRR: Automatic Gapping Resolution for Russian
 
 Gapping is the most common type of ellipsis, concerning such examples as  
- - _Ей он рассказывает одно, а нам -- совершенно другое_  
- - _Кто любит арбуз, а кто -- свиной хрящик_  
+ - _Ей он рассказывает одно, а нам — совершенно другое_  
+ - _Кто любит арбуз, а кто — свиной хрящик_  
  - _Дайте мне две пятерки, а я вам десятку_
 
 
@@ -18,17 +18,19 @@ This campaign is a pilot event for gapping resolution task for Russian held for 
 
 Participants will be provided with a corpus of several thousands of examples coming from texts of different genres, such as news, fiction, and science. Each sentence will be annotated as follows: two remnants **R1** and **R2**, their correlates in the antecedent clause **cR1** and **cR2**, the position of the elided  predicate **V** and the head of the correspondent predicate **cV**.
  - _Тогда я  **cV[** принял **cV]**  **cR1[** ее **cR1]**  **cR2[** за итальянку **cR2]**, а  **R1[** его **R1]**   **V[]**  **cR2[** за шведа **cR2]**._
- - _**cR1[** Иногда **cR1]** они  **cV[** развиваются **cV]**  **cR2[** слабо **cR2]**,  **R1[** иногда **R1]** - **V[]**   **R2[** очень сильно **R2]**, и тогда они начинают влиять на ход сюжета, а не наоборот._
+ - _**cR1[** Иногда **cR1]** они  **cV[** развиваются **cV]**  **cR2[** слабо **cR2]**,  **R1[** иногда **R1]** — **V[]**   **R2[** очень сильно **R2]**, и тогда они начинают влиять на ход сюжета, а не наоборот._
  
 
 ### Task Description
 
-**Binary presence-absence classification**    
+**1. Binary presence-absence classification**    
 For every sentence decide if there is a gapping construction in it.  
-**Gap resolution**  
+
+**2. Gap resolution**  
 Predict the position of the elided predicate and the correspondent predicate in the antecedent clause.  
-**Full annotation**  
-In the clause with the gap predict the linear position of the elided predicate and annotate its remnants. In the antecedent clause find the constituencies that correspond the remnants and the predicate that corresponds the gap.
+
+**3. Full annotation**  
+In the clause with the gap predict the linear position of the elided predicate and annotate its remnants. In the antecedent clause find the constituencies that correspond the remnants and the predicate that corresponds the gap.  
 
 
 ### Data formats and metrics
@@ -50,7 +52,7 @@ R2  222:237 254:269
 
 Such output corresponds to the following markup:
 
- - _Аналогичным образом, среднегодовой прирост ВВП на душу населения, который в странах, расположенных к югу от Сахары, составлял в период с 1965 по 1973 год 3 процента,  **cV[** упал **cV]**  **cR1[** с 1980 до 1986 года **cR1]**  **cR2[** на 2,8 процента **cR2]**,  **V[]** **R1[** в 1987 году **R1]** -  **R2[** на 4,4 процента **R2]** и  **V[]** **R1[** в 1989 году **R1]** -  **R2[** на 0,5 процента **R2]**._
+ - _Аналогичным образом, среднегодовой прирост ВВП на душу населения, который в странах, расположенных к югу от Сахары, составлял в период с 1965 по 1973 год 3 процента,  **cV[** упал **cV]**  **cR1[** с 1980 до 1986 года **cR1]**  **cR2[** на 2,8 процента **cR2]**,  **V[]** **R1[** в 1987 году **R1]** —  **R2[** на 4,4 процента **R2]** и  **V[]** **R1[** в 1989 году **R1]** —  **R2[** на 0,5 процента **R2]**._
 
 
 For the binary presence-absence classification for each sentence all the output lines except the first one are ignored.
