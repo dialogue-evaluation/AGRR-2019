@@ -1,4 +1,4 @@
-# AGGR-2019
+# AGRR-2019
 ## AGRR: Automatic Gapping Resolution for Russian
 
 Gapping is the most common type of ellipsis, concerning such examples as  
