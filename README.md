@@ -43,7 +43,7 @@ For every sentence decide if there is a gapping construction in it.
 Predict the position of the elided predicate and the correspondent predicate in the antecedent clause.  
 
 **3. Full annotation**  
-In the clause with the gap predict the linear position of the elided predicate and annotate its remnants. In the antecedent clause find the constituencies that correspond the remnants and the predicate that corresponds the gap.  
+In the clause with the gap predict the linear position of the elided predicate and annotate its remnants. In the antecedent clause find the constituents that correspond the remnants and the predicate that corresponds the gap.  
 
 
 ### Data formats and metrics
