@@ -1,4 +1,17 @@
+
+
 # AGRR-2019
+
+### Dates and links
+|              | Date           |
+| :---         |           ---: |
+| [Registration] (https://docs.google.com/forms/d/e/1FAIpQLSeiW0h6hvG-4iQC0dOXqyv8Pz-wG6xOhSSbFoIi9L7qsAtWbg/viewform) due   | Jan 25th 2019  | 
+| Release of the Training Data     | Jan 26th 2019  |
+| Release of the Test Data     | Feb 15th 2019  |
+| Systems submissions due     | Feb 22th 2019  |
+| Final results from organizers     | Mar 5th 2019   |
+
+
 ## AGRR: Automatic Gapping Resolution for Russian
 
 Gapping is the most common type of ellipsis, concerning such examples as  
