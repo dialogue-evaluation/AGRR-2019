@@ -3,6 +3,7 @@
 # AGRR-2019
 
 ### Dates and links
+ [Registration] (https://docs.google.com/forms/d/e/1FAIpQLSeiW0h6hvG-4iQC0dOXqyv8Pz-wG6xOhSSbFoIi9L7qsAtWbg/viewform) 
 |              | Date           |
 | :---         |           ---: |
 | [Registration] (https://docs.google.com/forms/d/e/1FAIpQLSeiW0h6hvG-4iQC0dOXqyv8Pz-wG6xOhSSbFoIi9L7qsAtWbg/viewform) due   | Jan 25th 2019  | 
