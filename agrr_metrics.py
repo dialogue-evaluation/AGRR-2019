@@ -1,7 +1,7 @@
 
 # coding: utf-8
 
-# python3 evaluate.py --lemmas correct_file test_file
+# python3 agrr_metrics.py --lemmas correct_file test_file
 # 
 # For the binary presence-absence classification for each sentence all the output lines except the first one are ignored. For gap resolution task lines corresponding to cR1, cR2, R1, R2 are ignored. For the full annotation task all output lines are evaluated.
 # The main metric for binary classification task would be standard f-measure. 
@@ -18,7 +18,7 @@ import pandas as pd
 
 
 def help_message():
-    print("Использование: python3 evaluate.py [-b|--binary, -r|--resolution] corr_file test_file")
+    print("Использование: python3 agrr_metrics.py [-b|--binary, -r|--resolution] corr_file test_file")
     print("Каждая строка в csv файлах  имеет вид")
     print("Текст<TAB>0 или 1<TAB>cV<TAB>cR1<TAB>cR2<TAB>V<TAB>R1<>R2")
     print("Если вы выполняете задание только по бинарной классификации, ")
@@ -110,7 +110,7 @@ if __name__ == "__main__":
         if opt in ["-d", "--dump-incorrect"]:
             dump_file = val
     if len(args) != 2:
-        sys.exit("Usage: python3 evaluate.py [-b|--binary, -r|--resolution] corr_file.csv test_file.csv")
+        sys.exit("Usage: python3 agrr_metrics.py [-b|--binary, -r|--resolution] corr_file.csv test_file.csv")
     corr_file, test_file = args
     corr_sents, test_sents = read_df(corr_file), read_df(test_file)
     if binary:
@@ -119,10 +119,10 @@ if __name__ == "__main__":
         quality = gapping_metrics(corr_sents, test_sents, resolution)
     
     if binary:
-        print('Binary classification quality (f1-score): ' + quality['f1_score'] )
-        print('Other metrics: ' + '\n Precision: ' + quality['precision'] + '\n Recall: ' + quality['recall'])
+        print('Binary classification quality (f1-score): ' + str(quality['f1-score']) )
+        print('Other metrics: ' + '\n Precision: ' + str(quality['precision']) + '\n Recall: ' + str(quality['recall']))
         
     else:
-        print('Binary classification quality (f1-score): ' + quality['classification_quality'] )
-        print('Gapping resolution quality (symbol-wise f-measure): ' + quality['symbol-wise_quality'])
+        print('Binary classification quality (f1-score): ' + str(quality['classification_quality']) )
+        print('Gapping resolution quality (symbol-wise f-measure): ' + str(quality['symbol-wise_quality']))
 
