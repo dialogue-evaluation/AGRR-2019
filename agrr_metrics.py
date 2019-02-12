@@ -1,7 +1,7 @@
 
 # coding: utf-8
 
-# python3 agrr_metrics.py --lemmas correct_file test_file
+# python3 agrr_metrics.py -r correct_file test_file
 # 
 # For the binary presence-absence classification for each sentence all the output lines except the first one are ignored. For gap resolution task lines corresponding to cR1, cR2, R1, R2 are ignored. For the full annotation task all output lines are evaluated.
 # The main metric for binary classification task would be standard f-measure. 
