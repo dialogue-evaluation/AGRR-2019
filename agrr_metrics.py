@@ -48,18 +48,21 @@ def binary_metrics(y_true, y_pred):
              'recall':recall}
 
 
-def symbol_wize(y_true1, y_pred1):
-    
+def symbol_wize(y_true, y_pred):
+    y_true1, y_pred1 = y_true.split(), y_pred.split()
     if y_true1 == y_pred1:
         return 1
-    
-    y_true = set(range(int(y_true1.split(':')[0]),int(y_true1.split(':')[1])))
-    y_pred = set(range(int(y_pred1.split(':')[0]),int(y_pred1.split(':')[1])))
+    y_true, y_pred = set(), set()
+    eps=1e-7
+    for i in y_true1:
+        y_true.update(set(range(int(i.split(':')[0]),int(i.split(':')[1]))))
+    for i in y_pred1:
+        y_pred.update(set(range(int(i.split(':')[0]),int(i.split(':')[1]))))
     true_pos = y_true.intersection(y_pred)
     false_neg = y_true.difference(y_pred)
     false_pos = y_pred.difference(y_true)
-    precision = len(true_pos)/(len(true_pos) + len(false_pos))
-    recall = len(true_pos)/(len(true_pos) + len(false_neg))
+    precision = (len(true_pos)+eps)/(len(true_pos) + len(false_pos)+eps)
+    recall = (len(true_pos)+eps)/(len(true_pos) + len(false_neg)+eps)
     f1_score = 2*(precision*recall)/(precision + recall)
     return f1_score
 
