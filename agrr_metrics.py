@@ -15,7 +15,7 @@ import sys
 import getopt
 import numpy as np
 import pandas as pd
-
+import csv
 
 def help_message():
     print("Использование: python3 agrr_metrics.py [-b|--binary, -r|--resolution] corr_file test_file")
@@ -50,8 +50,6 @@ def binary_metrics(y_true, y_pred):
 
 def symbol_wize(y_true, y_pred):
     y_true1, y_pred1 = y_true.split(), y_pred.split()
-    if y_true1 == y_pred1:
-        return 1
     y_true, y_pred = set(), set()
     eps=1e-7
     for i in y_true1:
@@ -82,7 +80,7 @@ def gapping_metrics(gold_data, real_data, resolution):
     binary_quality = binary_metrics(gold_data['class'], real_data['class'])
     f1_scores = [get_rank(gold_data.iloc[i]['class'], real_data.iloc[i]['class'], gold_data.iloc[i]['cV'], real_data.iloc[i]['cV']) for i in range(len(gold_data)) ] +\
     [get_rank(gold_data.iloc[i]['class'], real_data.iloc[i]['class'], gold_data.iloc[i]['V'], real_data.iloc[i]['V']) for i in range(len(gold_data)) ]
-    if resolution:
+    if not resolution:
         f1_scores += [get_rank(gold_data.iloc[i]['class'], real_data.iloc[i]['class'], gold_data.iloc[i]['cR1'], real_data.iloc[i]['cR1']) for i in range(len(gold_data)) ] +\
         [get_rank(gold_data.iloc[i]['class'], real_data.iloc[i]['class'], gold_data.iloc[i]['cR2'], real_data.iloc[i]['cR2']) for i in range(len(gold_data)) ]  +\
         [get_rank(gold_data.iloc[i]['class'], real_data.iloc[i]['class'], gold_data.iloc[i]['R1'], real_data.iloc[i]['R1']) for i in range(len(gold_data)) ]  +\
@@ -93,8 +91,8 @@ def gapping_metrics(gold_data, real_data, resolution):
 
 
 def read_df(filename):
-    df = pd.read_csv(filename, sep='\t')
-    df = df.fillna(0)
+    df = pd.read_csv(filename, sep='\t', quoting = csv.QUOTE_NONE)
+    df = df.fillna('')
     return df
 
 
