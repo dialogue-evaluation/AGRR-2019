@@ -80,29 +80,27 @@ In the clause with the gap predict the linear position of the elided predicate a
 
 ### Data formats and metrics
 
-Input data consists of sentences without any additional markup (raw texts).For each sentence output should contain 7 lines. First line should have 0 or 1 in it, depending on presence of gapping construction in the sentence.
-Other output lines should contain gapping element name (**cV**, **cR1**, **cR2**, **V**, **R1**, **R2**), tab symbol and char offsets (first symbol in each sentence has offset 0 1) for annotation borders (two numbers separated by colon (:) symbol) for each gapping element. If the provided sentence lacks certain gapping element, the corresponding line should not contain any symbols after tab. Here is the example
+Input data consists of sentences without any additional markup (raw texts).For each sentence output should contain 7 columns. First column should have 0 or 1 in it, depending on presence of gapping construction in the sentence.
+Other output cells separated with tab symbol correspond gapping element names (**cV**, **cR1**, **cR2**, **V**, **R1**, **R2**) and should contain char offsets (first symbol in each sentence has offset 0 1) for annotation borders (two numbers separated by colon (:) symbol) for each gapping element. If the provided sentence lacks certain gapping element, the corresponding cell should not contain any symbols. Here is the example
  
 **Input**  
 >Аналогичным образом, среднегодовой прирост ВВП на душу населения, который в странах, расположенных к югу от Сахары, составлял в период с 1965 по 1973 год 3 процента, упал с 1980 до 1986 года на 2,8 процента, в 1987 году - на 4,4 процента и в 1989 году - на 0,5 процента.
 
 **Output**  
->1  
-cV  166:170  
-cR1  171:190  
-cR2  191:206  
-V 222:222 254:254   
-R1  208:219 240:251  
-R2  222:237 254:269  
+
+| class | cV  | cR1  | cR2 | V | R1  | R2  |
+| :---  | :---  | :---  | :---  | :---  | :---  | :---  |
+| 1| 166:170 | 171:190 | 191:206  | 222:222 254:254  | 208:219 240:251 | 222:237 254:269 |
+
 
 Such output corresponds to the following markup:
 
  - _Аналогичным образом, среднегодовой прирост ВВП на душу населения, который в странах, расположенных к югу от Сахары, составлял в период с 1965 по 1973 год 3 процента,  **cV[** упал **cV]**  **cR1[** с 1980 до 1986 года **cR1]**  **cR2[** на 2,8 процента **cR2]**,   **R1[** в 1987 году **R1]** — **V[]** **R2[** на 4,4 процента **R2]** и  **R1[** в 1989 году **R1]** —  **V[]** **R2[** на 0,5 процента **R2]**._
 
 
-For the binary presence-absence classification for each sentence all the output lines except the first one are ignored.
-For gap resolution task lines corresponding to **cR1**, **cR2**, **R1**, **R2** are ignored.
-For the full annotation task all output lines are evaluated.
+For the binary presence-absence classification for each sentence all the output cells except the first one are ignored.
+For gap resolution task cells in columns **cR1**, **cR2**, **R1**, **R2** are ignored.
+For the full annotation task all output cells are evaluated.
 
 The main metric for binary classification task would be standard f-measure.
 Gapping element annotations would be measured by symbol-wise f-measure. E. g. if the gold standard offset for certain gapping element is 10:15 and the prediction is 8:14, we have 4 true positive chars, 1 false negative char and 2 false positive chars and the resulting f-measure equals 0.727.
