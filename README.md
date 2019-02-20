@@ -3,8 +3,9 @@
 # AGRR-2019
 
 ## Test data released
-We are happy to announce that test date has been uploaded to this repo.
+We are happy to announce that test date has been uploaded to this repo (test.csv).
 
+### Test data format description
 The test data comprises sentences from different genres: news, fiction, social media, technical texts and other sources.
 The format of the test data is as follows:
 * Columns are tab-separated;
@@ -24,7 +25,7 @@ One row as it is supposed to look like in your submission:
 
 Columns containing spans can be skipped in case your system does not participate in the tasks predicting annotations.
 
-
+### Submission process description
 
 All contest rules announced previously remain unchanged.
 
