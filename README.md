@@ -3,7 +3,7 @@
 # AGRR-2019
 
 ## Test data released
-Test date has been uploaded to this repo.
+We are happy to announce that test date has been uploaded to this repo.
 
 The test data comprises sentences from different genres: news, fiction, social media, technical texts and other sources.
 The format of the test data is as follows:
@@ -15,14 +15,13 @@ Please make sure to keep this data format in your submissions while filling the 
 
 
 One row as it appears in test data uploaded to github:
-
 Аналогичным образом, среднегодовой прирост ВВП на душу населения, который в странах, расположенных к югу от Сахары, составлял в период с 1965 по 1973 год 3 процента, упал с 1980 до 1986 года на 2,8 процента, в 1987 году - на 4,4 процента и в 1989 году - на 0,5 процента.\t\t\t\t\t\t\t\n
 
 One row as it is supposed to look like in your submission:
-
 Аналогичным образом, среднегодовой прирост ВВП на душу населения, который в странах, расположенных к югу от Сахары, составлял в период с 1965 по 1973 год 3 процента, упал с 1980 до 1986 года на 2,8 процента, в 1987 году - на 4,4 процента и в 1989 году - на 0,5 процента.\t1\t166:170\t171:190\t191:206\t222:222 254:254\t208:219 240:251\t222:237 254:269\n
 
 Columns containing spans can be skipped in case your system does not participate in the tasks predicting annotations.
+
 
 
 All contest rules announced previously remain unchanged.
