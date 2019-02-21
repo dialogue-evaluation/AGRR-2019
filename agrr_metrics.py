@@ -47,15 +47,23 @@ def binary_metrics(y_true, y_pred):
     return {'f1-score':f1_score, 'precision':precision,
              'recall':recall}
 
+def span_wider(pair):
+    begin, end = (pair.split(':'))
+    begin, end = int(begin), int(end)
+    if begin == end:
+        end += 1
+    return(begin,end)
 
 def symbol_wize(y_true, y_pred):
     y_true1, y_pred1 = y_true.split(), y_pred.split()
     y_true, y_pred = set(), set()
     eps=1e-7
     for i in y_true1:
-        y_true.update(set(range(int(i.split(':')[0]),int(i.split(':')[1]))))
+        begin, end = span_wider(i)
+        y_true.update(set(range(begin,end)))
     for i in y_pred1:
-        y_pred.update(set(range(int(i.split(':')[0]),int(i.split(':')[1]))))
+        begin, end = span_wider(i)
+        y_pred.update(set(range(begin,end)))
     true_pos = y_true.intersection(y_pred)
     false_neg = y_true.difference(y_pred)
     false_pos = y_pred.difference(y_true)
