@@ -77,7 +77,7 @@ def get_rank(gold_class, real_class, gold_span, real_span):
     if gold_class == real_class == 1:
         return symbol_wize(gold_span, real_span)
     elif gold_class == real_class == 0:
-        return 1
+        return np.nan
     else:
         return 0
 
@@ -93,7 +93,7 @@ def gapping_metrics(gold_data, real_data, resolution):
         [get_rank(gold_data.iloc[i]['class'], real_data.iloc[i]['class'], gold_data.iloc[i]['cR2'], real_data.iloc[i]['cR2']) for i in range(len(gold_data)) ]  +\
         [get_rank(gold_data.iloc[i]['class'], real_data.iloc[i]['class'], gold_data.iloc[i]['R1'], real_data.iloc[i]['R1']) for i in range(len(gold_data)) ]  +\
         [get_rank(gold_data.iloc[i]['class'], real_data.iloc[i]['class'], gold_data.iloc[i]['R2'], real_data.iloc[i]['R2']) for i in range(len(gold_data)) ] 
-    sw_quality = np.mean(f1_scores)
+    sw_quality = np.nanmean(f1_scores)
     return {'classification_quality':binary_quality['f1-score'], 'symbol-wise_quality':sw_quality}
 
 
