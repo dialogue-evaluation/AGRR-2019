@@ -3,7 +3,7 @@
 # AGRR-2019
 
 ## Test data released
-We are happy to announce that test date (test.csv) has been released and uploaded to this repo.
+We are happy to announce that test data (test.csv) has been released and uploaded to this repo.
 
 ### Test data format description
 The test data comprises sentences from different genres: news, fiction, social media, technical texts and other sources.
