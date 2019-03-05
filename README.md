@@ -1,6 +1,34 @@
 
 
 # AGRR-2019
+## Results
+|         |            |_binary_|| _gap resolution_ | _full_ |
+| :---:   | :---:    | :---:    | :---:    | :---:   | :---:   |
+| **_Team_**   | **_pecision_**  | **_recall_**  | **_f-measure_**  | **_f-measure_** |  **_f-measure_**  |
+| [fit_predict](https://github.com/ivbelkin/AGRR_2019/tree/master/agrr) | 0.9685157421  |  0.95    | **0.9591685226**  |  **0.9005941623**  | **0.8920508622**   |
+| [EXO](https://github.com/king-menin/AGRR-2019) | 0.8990318119 | 0.9643916914 | **0.9305654975** | **0.8148691034** | **0.7860819509** |
+| [Koziev Ilya](https://github.com/Koziev/AGRR-2019)   | 0.7742749054  | 0.9029411765 |0.8336727766 | **0.6772192685** | **0.6465203883** |
+| [Derise](https://github.com/Derise/agrr)   | 0.8010403121  | 0.9058823529 | **0.8502415459** | 0.6648673209 | 0.6217855431 |
+| Meanotek  | 0.8909395973 | 0.7808823529 | 0.8322884013 | 0.6353879323 | 0.5144021953 |
+| [МГУ-DeepPavlov](https://github.com/AlexeySorokin/Gapping) | 0.933901919 | 0.6441176471 | 0.7624020888 | 0.6006856553 | 0.5867789431 |
+| [Vlad](https://github.com/mamamot/AGRR2019-gapping-resolver)  | 0.7780580076 | 0.9154302671 | 0.8411724608 | 0.5739121103 | |
+| [MorphoBabushka](https://github.com/Dialogue2019TeamZ/AGRR_solution) | 0.7626811594 | 0.6191176471 | 0.6834415584 | 0.4658028036 | 0.4404665955 |
+| [nsu-ai ](https://github.com/nsu-ai-team/gapping)  | 0.485380117 | 0.1231454006 | 0.1964497041 | 0.03731610585 | 0.03649377219|
+
+Results we obtained after test data publication:
+
+
+|submit |         |          |_binary_|   | _gap resolution_ | _full_ |
+| :---:  | :---:   | :---:    | :---:    | :---:    | :---:   | :---:   |
+| | **_Team_**   | **_pecision_**  | **_recall_**  | **_f-measure_**  | **_f-measure_** |  **_f-measure_**  |
+| | [EXO](https://github.com/king-menin/AGRR-2019) | 0.9455882353 | 0.9455882353 | 0.9455882353 | 0.8590594659 | 0.8364099229 |
+|1 | [МГУ-DeepPavlov](https://github.com/AlexeySorokin/Gapping) | 0.8981612447 | 0.9338235294 |0.9156452776 |                |              |
+| 2| [МГУ-DeepPavlov](https://github.com/AlexeySorokin/Gapping) | 0.9733924612 | 0.6455882353 |0.7763041556 | 0.6167931129 | 0.599489203 |
+|3 | [МГУ-DeepPavlov](https://github.com/AlexeySorokin/Gapping) | 0.9699398798 | 0.7117647059 | 0.8210347752 | 0.658111512 | 0.6529509963 |
+| | Meanotek                                      | 0.8148148148 | 0.9382352941 | 0.8721804511 | 0.7272246172 | 0.6878476803 |
+
+
+
 
 ## Test data released
 We are happy to announce that test data (test.csv) has been released and uploaded to this repo.
