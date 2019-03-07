@@ -4,7 +4,7 @@
 ## Results
 |         |            |_binary_|| _gap resolution_ | _full_ |
 | :---:   | :---:    | :---:    | :---:    | :---:   | :---:   |
-| **_Team_**   | **_pecision_**  | **_recall_**  | **_f-measure_**  | **_f-measure_** |  **_f-measure_**  |
+| **_Team_**   | **_precision_**  | **_recall_**  | **_f-measure_**  | **_f-measure_** |  **_f-measure_**  |
 | [fit_predict](https://github.com/ivbelkin/AGRR_2019/tree/master/agrr) | 0.9685157421  |  0.95    | **0.9591685226**  |  **0.9005941623**  | **0.8920508622**   |
 | [EXO](https://github.com/king-menin/AGRR-2019) | 0.8990318119 | 0.9643916914 | **0.9305654975** | **0.8148691034** | **0.7860819509** |
 | [Koziev Ilya](https://github.com/Koziev/AGRR-2019)   | 0.7742749054  | 0.9029411765 |0.8336727766 | **0.6772192685** | **0.6465203883** |
@@ -20,7 +20,7 @@ Results we obtained after test data publication:
 
 |submit |         |          |_binary_|   | _gap resolution_ | _full_ |
 | :---:  | :---:   | :---:    | :---:    | :---:    | :---:   | :---:   |
-| | **_Team_**   | **_pecision_**  | **_recall_**  | **_f-measure_**  | **_f-measure_** |  **_f-measure_**  |
+| | **_Team_**   | **_precision_**  | **_recall_**  | **_f-measure_**  | **_f-measure_** |  **_f-measure_**  |
 | | [EXO](https://github.com/king-menin/AGRR-2019) | 0.9455882353 | 0.9455882353 | 0.9455882353 | 0.8590594659 | 0.8364099229 |
 |1 | [МГУ-DeepPavlov](https://github.com/AlexeySorokin/Gapping) | 0.8981612447 | 0.9338235294 |0.9156452776 |                |              |
 | 2| [МГУ-DeepPavlov](https://github.com/AlexeySorokin/Gapping) | 0.9733924612 | 0.6455882353 |0.7763041556 | 0.6167931129 | 0.599489203 |
