@@ -28,7 +28,8 @@ Results we obtained after test data publication:
 | | [Meanotek](https://github.com/meanotekai/gapresolution)    | 0.8148148148 | 0.9382352941 | 0.8721804511 | 0.7272246172 | 0.6878476803 |
 
 
-
+## SynTagRus gapping test set
+The link to the test set obtained from Syntagrus is coming soon
 
 ## Test data released
 We are happy to announce that test data (test.csv) has been released and uploaded to this repo.
