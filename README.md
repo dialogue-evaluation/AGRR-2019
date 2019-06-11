@@ -29,7 +29,7 @@ Results we obtained after test data publication:
 
 
 ## SynTagRus gapping test set
-The link to the test set obtained from Syntagrus is coming soon
+The [link](https://lindat.mff.cuni.cz/repository/xmlui/handle/11234/1-3001) to the test set obtained from Syntagrus.
 
 ## Test data released
 We are happy to announce that test data (test.csv) has been released and uploaded to this repo.
