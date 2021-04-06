@@ -33,6 +33,7 @@ SHORT_OPTS, LONG_OPTS = "brhd:", ["binary",'resolution', "help", "dump-incorrect
 
 # binary classification
 def binary_metrics(y_true, y_pred):
+    eps=1e-7
     true_pos,false_pos,false_neg = 0,0,0
     for i in range(len(y_true)):
         if y_true[i] == 1 == y_pred[i]:
@@ -41,9 +42,9 @@ def binary_metrics(y_true, y_pred):
             false_neg += 1
         elif y_true[i] == 0 and y_pred[i] == 1:
             false_pos += 1
-    precision = true_pos/(true_pos + false_pos)
-    recall = true_pos/(true_pos + false_neg)
-    f1_score = 2*(precision*recall)/(precision + recall)
+    precision = true_pos/(true_pos + false_pos + eps)
+    recall = true_pos/(true_pos + false_neg + eps)
+    f1_score = 2*(precision*recall)/(precision + recall + eps)
     return {'f1-score':f1_score, 'precision':precision,
              'recall':recall}
 
@@ -69,7 +70,7 @@ def symbol_wize(y_true, y_pred):
     false_pos = y_pred.difference(y_true)
     precision = (len(true_pos)+eps)/(len(true_pos) + len(false_pos)+eps)
     recall = (len(true_pos)+eps)/(len(true_pos) + len(false_neg)+eps)
-    f1_score = 2*(precision*recall)/(precision + recall)
+    f1_score = 2*(precision*recall)/(precision + recall + eps)
     return f1_score
 
 
